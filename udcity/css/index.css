@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background: white;
+    width: 40%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px 2px #b1b1b1;
+}
+
+.logo:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+p {
+    font-size: 14px;
+    color: #666;
+}
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.input-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.input-box img {
+    width: 20px;
+        margin-left: 10px;
+    }
+button {
+    width: 100%;
+    background: #780000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+button:hover {
+    transition: 0.3s;
+    background: #520000;
+}
+.success {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #db0202;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.toasts {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #239700;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.toast.show {
+    visibility: visible;
+    animation: fadeInOut 3s;
+}
+
+.toasts.show {
+    visibility: visible;
+    animation: fadeInOut 3s;
+}
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
